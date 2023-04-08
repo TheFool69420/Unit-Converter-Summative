@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TabPane layoutX="-3.0" prefHeight="500.0" prefWidth="494.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Force">
+               <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txt1" layoutX="16.0" layoutY="116.0" onKeyReleased="#ConvertF1" onKeyTyped="#verifNum" />
+                        <TextField fx:id="txt2" layoutX="299.0" layoutY="116.0" onKeyReleased="#ConvertF2" onKeyTyped="#verifNum" />
+                        <ComboBox fx:id="cbo1" layoutX="299.0" layoutY="226.0" onAction="#ConvertF1" prefWidth="150.0" promptText="Choisir" />
+                        <ComboBox fx:id="cbo2" layoutX="21.0" layoutY="220.0" onAction="#ConvertF2" prefWidth="150.0" promptText="Choisir" />
+                        <Text layoutX="96.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTIVERSSEUR DE FORCE" wrappingWidth="301.1953125">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnexit" layoutX="431.0" layoutY="14.0" mnemonicParsing="false" onAction="#quit" text="Exit" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Vitesse">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textField1" layoutX="38.0" layoutY="207.0" onKeyReleased="#ConvertV1" />
+                        <TextField fx:id="textField2" layoutX="284.0" layoutY="207.0" onKeyReleased="#ConvertV2" />
+                        <ComboBox fx:id="ComboBox1" layoutX="44.0" layoutY="310.0" onAction="#ConvertV1" prefWidth="150.0" />
+                        <ComboBox fx:id="ComboBox2" layoutX="290.0" layoutY="310.0" onAction="#ConvertV2" prefWidth="150.0" />
+                        <Text layoutX="78.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTIVERSSEUR DE VITESSE" wrappingWidth="319.1953125">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="Exit" layoutX="425.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitter" text="Exit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Viscosité">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtField1" layoutX="52.0" layoutY="131.0" onKeyReleased="#ConvertVi1" />
+                        <TextField fx:id="txtField2" layoutX="298.0" layoutY="131.0" onKeyReleased="#ConvertVi2" />
+                        <Text layoutX="53.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONTIVERSSEUR DE VISCOSITÉ" wrappingWidth="347.1953125">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="Cbox1" layoutX="58.0" layoutY="250.0" onAction="#ConvertVi1" prefWidth="150.0" />
+                        <ComboBox fx:id="Cbox2" layoutX="298.0" layoutY="243.0" onAction="#ConvertVi2" prefWidth="150.0" />
+                        <Button fx:id="Exitbtn" layoutX="415.0" layoutY="25.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
